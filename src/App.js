@@ -1,10 +1,21 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
+import OrderPage from "./pages/OrderPage/OrderPage";
 
 const App = () => {
   return (
     <>
-      <h1>Teknolojik Yemekler</h1>
-      <p>Burdaki kodu silip kendi headerınızı ekleyebilirsiniz</p>
+      <Switch>
+        <Route path="/">
+          <OrderPage />
+        </Route>
+        <Route path="/pizza">
+          <OrderPage />
+        </Route>
+        <Route path="/success">
+          <OrderPage />
+        </Route>
+      </Switch>
     </>
   );
 };

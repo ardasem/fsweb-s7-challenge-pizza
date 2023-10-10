@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.pizza--properties{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.radio--buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.radio--button--container {
+  display: flex;
+  flex-direction: row;
+  background-color: #faf7f2;
+  padding: 15px 20px 18px 20px;
+  border: none;
+  border-radius: 36px;
+  font-family: Barlow;
+  cursor: pointer;
+}
+
+.radio--button--container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.radio--button--container:hover {
+  background-color: #fdc913;
+}
+
+.radio--button--container input[type="radio"]:checked + .radio--button--container {
+  background-color: #fdc913 !important;
+}
+
+.dough--dropdown select{
+  border-radius: 6px;
+  background: #faf7f2;
+  color: #5f5f5f;
+  font-family: Barlow;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px; 
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  width: 250px;
+}
+
+.dough--dropdown select:focus{
+  border: #fdc913;
+}
+

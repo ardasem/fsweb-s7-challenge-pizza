@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&display=swap");
+
+.header--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ce2829;
+  padding: 0px 30% 0px 30%;
+}
+
+.header--heading {
+  font-family: "Londrina Solid", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 100% */
+  text-transform: capitalize;
+}
