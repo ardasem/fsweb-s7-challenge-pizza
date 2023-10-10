@@ -1,9 +1,11 @@
 import React from "react";
 import "./propertiescontainer.css";
 import { useEffect } from "react";
+import { formSchema } from "../../formSchema";
+import * as Yup from 'yup'
 
 function PropertiesContainer(props) {
-  const { formState, setFormState } = props;
+  const { formState, setFormState,errorState,setErrorState } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -14,6 +16,15 @@ function PropertiesContainer(props) {
         [name]: value,
       };
     });
+
+    Yup.reach(formSchema, name)
+      .validate(value)
+      .then((valid) => {
+        setErrorState({ ...errorState, [name]: "" });
+      })
+      .catch((err) => {
+        setErrorState({ ...errorState, [name]: err.errors[0] });
+      });
   };
 
   useEffect(() => {
@@ -23,6 +34,7 @@ function PropertiesContainer(props) {
   return (
     <div className="pizza--properties">
       <div>
+        
         <p className="form--heading">Boyut Seç</p>
         <div className="radio--buttons">
           <label className="radio--button--container">
@@ -69,6 +81,7 @@ function PropertiesContainer(props) {
           <option value="thick">Kalın</option>
           <option value="thin">İnce</option>
         </select>
+        {errorState.dough && <p className="error">{errorState.dough}</p> }
       </div>
     </div>
   );

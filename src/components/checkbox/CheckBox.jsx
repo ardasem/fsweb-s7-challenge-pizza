@@ -1,8 +1,13 @@
 import React from "react";
 import data from "./data.js";
 import './CheckBox.css'
+import * as Yup from 'yup'
+import { formSchema } from '../../formSchema'
 
-function CheckBox({ formState, setFormState }) {
+function CheckBox(props) {
+
+    const {formState, setFormState, errorState,setErrorState} = props;
+
   const handleChange = (e) => {
     const { checked, value } = e.target;
 
@@ -22,6 +27,14 @@ function CheckBox({ formState, setFormState }) {
       };
     });
 
+    Yup.reach(formSchema)
+    .validate(value)
+    .then((valid) => {
+      setErrorState({ ...errorState, ingredients: "" });
+    })
+    .catch((err) => {
+      setErrorState({ ...errorState, ingredients: err.errors[0] });
+    });
   
   };
 

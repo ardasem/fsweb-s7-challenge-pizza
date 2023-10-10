@@ -1,18 +1,19 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import OrderPage from "./pages/OrderPage/OrderPage";
+import HomePage from "./pages/HomePage/HomePage";
 
 const App = () => {
   return (
     <>
       <Switch>
-        <Route path="/">
-          <OrderPage />
+        <Route exact path="/">
+          <HomePage />
         </Route>
         <Route path="/pizza">
           <OrderPage />
         </Route>
-        <Route path="/success">
+        <Route path="/success" >
           <OrderPage />
         </Route>
       </Switch>
