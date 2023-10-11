@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.recommendations--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: hsl(38, 44%, 96%);
+  padding-top: 120px;
+}
+
+.foodcard--big {
+  width: 636px;
+  height: 536px;
+  background-image: url("../../Assets/adv-aseets/kart-1.png");
+  background-size: 636px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 16px;
+  margin: 10px;
+}
+
+.foodcard--small {
+  width: 636px;
+  height: 263px;
+  background-image: url("../../Assets/adv-aseets/kart-2.png");
+  background-size: 636px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 16px;
+  margin: 10px;
+}
+
+.card-two {
+  background-image: url("../../Assets/adv-aseets/kart-3.png");
+}
+
+.card-two p {
+  color: #292929;
+  font-family: Barlow;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44.267px; /* 138.333% */
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+
+.foodcard--big .big--paragraph {
+  color: #fff;
+  font-family: Quattrocento;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px; /* 105.882% */
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+.foodcard--big .small--paragraph {
+  color: #fff;
+  font-family: Barlow;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.762px; /* 133.809% */
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+
+.foodcard--small .big--paragraph {
+  color: #fff;
+  font-family: Barlow;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44.267px; /* 138.333% */
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+
+.home--orderbtn {
+  color: #ce2829;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px; /* 342.857% */
+  border-radius: 50px;
+  background: #fff;
+  border: none;
+  max-width: 138px;
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}

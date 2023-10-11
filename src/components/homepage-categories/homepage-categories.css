@@ -1,0 +1,13 @@
+.homepage--categories--container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+}
+
+.category{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}

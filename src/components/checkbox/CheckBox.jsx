@@ -3,6 +3,8 @@ import data from "./data.js";
 import './CheckBox.css'
 import * as Yup from 'yup'
 import { formSchema } from '../../formSchema'
+import ingredients from "./data.js";
+import { useEffect } from "react";
 
 function CheckBox(props) {
 
@@ -27,16 +29,20 @@ function CheckBox(props) {
       };
     });
 
-    Yup.reach(formSchema)
-    .validate(value)
+ 
+  
+  };
+
+  useEffect(()=>{
+    Yup.reach(formSchema,'ingredients')
+    .validate(formState.ingredients)
     .then((valid) => {
       setErrorState({ ...errorState, ingredients: "" });
     })
     .catch((err) => {
       setErrorState({ ...errorState, ingredients: err.errors[0] });
     });
-  
-  };
+  },[formState])
 
   return (
     <>

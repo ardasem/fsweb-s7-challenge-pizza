@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from '../../layout/header/Header'
-import Hero from '../../containers/hero/Hero'
+
 import OrderForm from '../../containers/orderform/OrderForm'
+import Hero from '../../containers/orderform-hero/Hero'
 
 function OrderPage() {
   return (
