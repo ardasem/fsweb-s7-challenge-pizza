@@ -22,8 +22,8 @@ function RecommendationsContainer() {
 
         <div className="foodcard--small card-two">
           <p>
-            Çoooook hızlı <br />
-            npm gibi kurye{" "}
+            <em>Çoooook</em> hızlı <br />
+            npm gibi kurye
           </p>
           <button className="home--orderbtn">SİPARİŞ VER</button>
         </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Header from '../../layout/header/Header'
 import HomePageHero from '../../containers/homepage-hero/HomePageHero'
 import HomePageCategories from '../../components/homepage-categories/HomePageCategories'

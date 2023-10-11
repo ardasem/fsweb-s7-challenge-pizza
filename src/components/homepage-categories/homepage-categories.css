@@ -4,10 +4,20 @@
     align-items: center;
     justify-content: center;
     gap: 110px;
+    padding: 20px;
 }
 
 .category{
     display:flex;
     flex-direction: row;
     gap: 10px;
+    cursor: pointer;
+}
+
+.category:hover{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    opacity: 0.8;
 }

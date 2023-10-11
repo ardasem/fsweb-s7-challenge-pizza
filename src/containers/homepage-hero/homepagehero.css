@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .homepage--hero {
-  background-image: url("./mvp-banner.png");
+  background-image: url("../../Assets/adv-aseets/mvp-banner.png");
   background-size: cover;
   height: 1080px;
   display: flex;
@@ -49,6 +49,11 @@
   font-style: normal;
   font-weight: 600;
   line-height: 24.762px; /* 137.566% */
+  cursor: pointer;
+}
+
+.custom--button:hover {
+  background: #cea614;
 }
 
 .navlink{
