@@ -6,14 +6,13 @@ import "./homepagehero.css";
 function HomePageHero() {
   return (
     <div className="homepage--hero">
+      <p className="satisfy">fırsatı kaçırma</p>
+      <p className="bebas"> KOD ACIKTIRIR</p>
+      <p className="bebas"> pizza, doyurur</p>
 
-        <p className="satisfy">fırsatı kaçırma</p>
-        <p className="bebas"> KOD ACIKTIRIR</p>
-        <p className="bebas">  pizza, doyurur</p>
-        
-      <div className="custom--button">
-        <NavLink className='navlink' to="/pizza">ACIKTIM</NavLink>
-      </div>
+      <NavLink className="navlink" to="/pizza">
+        <button className="custom--button">ACIKTIM</button>
+      </NavLink>
     </div>
   );
 }

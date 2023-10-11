@@ -7,14 +7,14 @@ import fastfoodLogo from "../../Assets/adv-aseets/icons/5.svg";
 import drinksLogo from "../../Assets/adv-aseets/icons/6.svg";
 import './homepage-categories.css'
 
-function HomePageCategories() {
+function HomePageCategories(props) {
   return (
     <div className="homepage--categories--container">
       <span className="category">
         <img src={koreanLogo} />
-        <p>YENI! Kore</p>
+        <p>{props.food}</p>
       </span>
-      <span className="category">
+      <span className="category active">
         <img src={pizzaLogo} />
         <p>Pizza</p>
       </span>

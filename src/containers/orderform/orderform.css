@@ -2,7 +2,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin:0 30% 0 30%;
+    margin:55px 30% 135px 30%;
 }
 
 .form--heading {

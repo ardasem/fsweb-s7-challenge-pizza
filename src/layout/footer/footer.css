@@ -1,0 +1,95 @@
+.footer--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  padding: 60px 300px;
+}
+
+.footer--container .footer--upper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  gap:200px;
+}
+
+.footer--heading {
+  font-family: "Londrina Solid", sans-serif;
+  color: #fff;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 100% */
+  text-transform: capitalize;
+}
+
+.footer--heading--two {
+  color: #fff;
+  font-family: Barlow;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32.114px; /* 133.81% */
+}
+
+.footer--paragraph {
+  color: #fff;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32.4px; /* 180% */
+}
+
+.contact--span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.contact--span p {
+  color: #fff;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32.4px; /* 180% */
+}
+
+.contact--span img {
+  width: 25px;
+  height: 25px;
+}
+
+.ig--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px 60px;
+}
+
+.right {
+  margin-top: -81px;
+}
+
+.footer--lower{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    gap: 1000px;
+    border-top: 1px solid #636363;
+    width: 100%;
+}
+
+.footer--icon{
+    filter: invert(1);
+}

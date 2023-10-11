@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.foods--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(38, 44%, 96%);
+  padding-top: 120px;
+  padding-bottom: 135px;
+}
+
+.foods--container .satisfy {
+  color: #ce2829;
+  margin: 0;
+}
+
+.barlow {
+  color: #292929;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56.2px; /* 133.81% */
+  margin: 0;
+}
+
+.foods--headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.foods--container .category {
+  background-color: #fff;
+  padding: 10px 27px 10px 27px;
+  gap: 10px;
+  border-radius: 50px;
+  color: #000;
+  text-align: center;
+  margin: -30px;
+  margin-top: 50px;
+}
+
+.foods--container .category .p{
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32.4px; /* 180% */
+
+
+}
+
+.foods--container .active {
+  background-color: #292929;
+  color: #fff;
+}
+
+
+.food--cards--container{
+    display: flex;
+    flex-direction: row;
+    padding: 72px;
+    gap: 24px;
+}

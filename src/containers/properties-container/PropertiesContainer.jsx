@@ -2,10 +2,10 @@ import React from "react";
 import "./propertiescontainer.css";
 import { useEffect } from "react";
 import { formSchema } from "../../formSchema";
-import * as Yup from 'yup'
+import * as Yup from "yup";
 
 function PropertiesContainer(props) {
-  const { formState, setFormState,errorState,setErrorState } = props;
+  const { formState, setFormState, errorState, setErrorState } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,20 +34,20 @@ function PropertiesContainer(props) {
   return (
     <div className="pizza--properties">
       <div>
-        
         <p className="form--heading">Boyut Seç</p>
         <div className="radio--buttons">
-          <label className="radio--button--container">
+          <label className={`radio--button--container ${formState.size === "small" ? "active" : ""}`} >
             S
-            <input type="radio"
+            <input
+              type="radio"
               name="size"
               value="small"
               onChange={handleChange}
-              checked={formState.size === "small"} />
-            
+              checked={formState.size === "small"}
+            />
           </label>
 
-          <label className="radio--button--container">
+          <label className={`radio--button--container ${formState.size === "medium" ? "active" : ""}`}>
             M
             <input
               type="radio"
@@ -56,21 +56,19 @@ function PropertiesContainer(props) {
               onChange={handleChange}
               checked={formState.size === "medium"}
             />
-        
           </label>
 
-          <label className="radio--button--container">
-           L
+          <label className={`radio--button--container ${formState.size === "large" ? "active" : ""}`}>
+            L
             <input
+              className={formState.size === "large" ? "active" : null}
               type="radio"
               name="size"
               value="large"
               onChange={handleChange}
               checked={formState.size === "large"}
             />
-            
           </label>
-
         </div>
       </div>
 
@@ -81,7 +79,7 @@ function PropertiesContainer(props) {
           <option value="thick">Kalın</option>
           <option value="thin">İnce</option>
         </select>
-        {errorState.dough && <p className="error">{errorState.dough}</p> }
+        {errorState.dough && <p className="error">{errorState.dough}</p>}
       </div>
     </div>
   );

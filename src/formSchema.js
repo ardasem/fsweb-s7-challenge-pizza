@@ -5,9 +5,12 @@ export const formSchema = Yup.object().shape({
   size: Yup.string()
     .oneOf(["small", "medium", "large"], "Lütfen boyut seçiniz.")
     .required("Lütfen boyut seçiniz."),
-  dough: Yup.string()
-    .oneOf(["thick", "thin"], "Lütfen hamur kalınlığı seçiniz."),
-  ingredients: Yup.array().of(Yup.string()).required().max(10,'Lütfen en fazla on malzeme seçiniz.')
+  dough: Yup.string().required("Lütfen hamur kalınlığı seçiniz."),
+  ingredients: Yup.array()
+    .of(Yup.string())
+    .required()
+    .min(4, "Lütfen en az 4 adet malzeme seçiniz.")
+    .max(10, "Lütfen en fazla 10 adet malzeme seçiniz."),
 });
 
-//.min(4,"Lütfen en az dört malzeme seçiniz.")
+//

@@ -1,0 +1,39 @@
+.food--card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 55px 22px 55px;
+  background: #fff;
+}
+
+.food--card .card--heading {
+  color: #292929;
+  font-family: Barlow;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29.438px; /* 133.81% */
+}
+
+.food--card .card--info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.food--card .card--info p {
+  color: rgba(27, 27, 27, 0.7);
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28.8px; /* 180% */
+}
+
+.food--card .card--info .bold {
+  color: #292929;
+  font-family: Barlow;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24.762px; /* 123.809% */
+}

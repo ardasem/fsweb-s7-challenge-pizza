@@ -3,31 +3,30 @@ import './notecomponent.css'
 
 
 function NoteContainer(props) {
-  const {formState,setFormState} = props;
+  const {formState,setFormState,name,heading,msg,errorState} = props;
 
   const handleChange = (e)=>{
-    const {value} = e.target
+    const {value,name} = e.target
 
     setFormState((prevState)=>{
       return {
         ...prevState,
-        notes: value
+        [name]: value
       }
 
     })
-
-    console.log(formState)
 
   }
 
   return (
     <div className="note--component">
-      <p className="form--heading">Sipariş Notu</p>
+      <p className="form--heading">{heading}</p>
+      
       <textarea
-        name="notes"
+        name={name}
         cols="1"
         rows="1"
-        placeholder="Siparişine eklemek istediğin bir not var mı?"
+        placeholder={msg}
         onChange={handleChange}
       ></textarea>
     </div>

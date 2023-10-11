@@ -34,8 +34,8 @@
   background-color: #fdc913;
 }
 
-.radio--button--container input[type="radio"]:checked + .radio--button--container {
-  background-color: #fdc913 !important;
+.active{
+  background-color: #fdc913;
 }
 
 .dough--dropdown select{

@@ -3,6 +3,7 @@ import Header from '../../layout/header/Header'
 
 import OrderForm from '../../containers/orderform/OrderForm'
 import Hero from '../../containers/orderform-hero/Hero'
+import Footer from '../../layout/footer/Footer'
 
 function OrderPage() {
   return (
@@ -10,6 +11,7 @@ function OrderPage() {
         <Header />
         <Hero />
         <OrderForm />
+        <Footer />
     </div>
   )
 }

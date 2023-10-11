@@ -3,7 +3,7 @@ import "./ordercheckcontainer.css";
 
 
 function OrderCheckContainer(props) {
-  const { formState, setFormState } = props;
+  const { formState, setFormState,isValid } = props;
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -90,7 +90,7 @@ function OrderCheckContainer(props) {
         <button
           className="order--button"
           type="submit"
-          disabled={!formState.isValid}
+          disabled={!isValid}
         >
           Sipariş Ver
         </button>
