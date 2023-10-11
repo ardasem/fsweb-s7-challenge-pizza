@@ -6,7 +6,6 @@ function CheckboxContainer(props) {
 
     const {formState,setFormState,errorState,setErrorState} = props;
 
-
   return (
     <div className="ingredients--container">
           <p className="form--heading">Ek Malzemeler</p>

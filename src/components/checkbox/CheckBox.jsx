@@ -3,7 +3,6 @@ import data from "./data.js";
 import './CheckBox.css'
 import * as Yup from 'yup'
 import { formSchema } from '../../formSchema'
-import ingredients from "./data.js";
 import { useEffect } from "react";
 
 function CheckBox(props) {

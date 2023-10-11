@@ -11,27 +11,27 @@ function HomePageCategories(props) {
   return (
     <div className="homepage--categories--container">
       <span className="category">
-        <img src={koreanLogo} />
+        <img src={koreanLogo} alt="" />
         <p>{props.food}</p>
       </span>
       <span className="category active">
-        <img src={pizzaLogo} />
+        <img src={pizzaLogo} alt=""/>
         <p>Pizza</p>
       </span>
       <span className="category">
-        <img src={burgerLogo} />
+        <img src={burgerLogo} alt=""/>
         <p>Burger</p>
       </span>
       <span className="category">
-        <img src={friesLogo} />
+        <img src={friesLogo} alt="" />
         <p>Kızartmalar</p>
       </span>
       <span className="category">
-        <img src={fastfoodLogo} />
+        <img src={fastfoodLogo} alt="" />
         <p>Fast food</p>
       </span>
       <span className="category">
-        <img src={drinksLogo} />
+        <img src={drinksLogo} alt=""/>
         <p>Gazlı İçecekler</p>
       </span>
     </div>

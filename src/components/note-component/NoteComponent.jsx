@@ -3,7 +3,7 @@ import './notecomponent.css'
 
 
 function NoteContainer(props) {
-  const {formState,setFormState,name,heading,msg,errorState} = props;
+  const {setFormState,name,heading,msg} = props;
 
   const handleChange = (e)=>{
     const {value,name} = e.target

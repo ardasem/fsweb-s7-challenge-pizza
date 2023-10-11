@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import heroBG from "../../Assets/adv-aseets/mvp-banner.png";
 import "./homepagehero.css";
 
 function HomePageHero() {

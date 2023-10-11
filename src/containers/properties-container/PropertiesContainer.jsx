@@ -1,6 +1,5 @@
 import React from "react";
 import "./propertiescontainer.css";
-import { useEffect } from "react";
 import { formSchema } from "../../formSchema";
 import * as Yup from "yup";
 
@@ -27,9 +26,7 @@ function PropertiesContainer(props) {
       });
   };
 
-  useEffect(() => {
-    console.log(formState);
-  }, [formState]);
+
 
   return (
     <div className="pizza--properties">
