@@ -42,7 +42,7 @@
   border: none;
   border-radius: 45px;
   width: 100px;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 55px;
   color: #292929;
   font-family: Barlow;
   font-size: 18px;
@@ -58,6 +58,5 @@
 
 .navlink{
     text-decoration: none;
-    color: #292929;;
-
+    color: #292929;
 }

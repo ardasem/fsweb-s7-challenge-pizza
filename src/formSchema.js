@@ -1,9 +1,9 @@
 import * as Yup from "yup";
 
 export const formSchema = Yup.object().shape({
- // name: Yup.string().required("Lütfen isminizi giriniz."),
+  name: Yup.string().required("Lütfen isminizi giriniz."),
   size: Yup.string()
-    .oneOf(["small", "medium", "large"], "Lütfen boyut seçiniz.")
+    .oneOf(["S", "M", "L"], "Lütfen boyut seçiniz.")
     .required("Lütfen boyut seçiniz."),
   dough: Yup.string().required("Lütfen hamur kalınlığı seçiniz."),
   ingredients: Yup.array()
@@ -13,4 +13,4 @@ export const formSchema = Yup.object().shape({
     .max(10, "Lütfen en fazla 10 adet malzeme seçiniz."),
 });
 
-//
+

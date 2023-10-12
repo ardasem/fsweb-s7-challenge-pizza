@@ -3,7 +3,7 @@ import './notecomponent.css'
 
 
 function NoteContainer(props) {
-  const {setFormState,name,heading,msg} = props;
+  const {setFormState,name,heading,msg,id} = props;
 
   const handleChange = (e)=>{
     const {value,name} = e.target
@@ -21,8 +21,9 @@ function NoteContainer(props) {
   return (
     <div className="note--component">
       <p className="form--heading">{heading}</p>
-      
+    
       <textarea
+        id={id}
         name={name}
         cols="1"
         rows="1"

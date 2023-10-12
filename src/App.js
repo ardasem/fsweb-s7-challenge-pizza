@@ -1,9 +1,13 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import OrderPage from "./pages/OrderPage/OrderPage";
 import HomePage from "./pages/HomePage/HomePage";
+import OrderPage from "./pages/OrderPage/OrderPage";
+import SuccessPage from "./pages/SuccessPage/SuccessPage";
+import {useState} from 'react'
 
 const App = () => {
+  const [finalOrderState, setFinalOrderState] = useState({})
+
   return (
     <>
       <Switch>
@@ -11,10 +15,10 @@ const App = () => {
           <HomePage />
         </Route>
         <Route path="/pizza">
-          <OrderPage />
+          <OrderPage setFinalOrderState={setFinalOrderState} />
         </Route>
         <Route path="/success" >
-          <OrderPage />
+          <SuccessPage finalOrderState={finalOrderState}/>
         </Route>
       </Switch>
     </>

@@ -12,36 +12,35 @@ function CheckBox(props) {
   const handleChange = (e) => {
     const { checked, value } = e.target;
 
-    setFormState((prevState) => {
-      let updatedIngredients;
-      if (checked) {
-        updatedIngredients = [...prevState.ingredients, value];
-      } else {
-        updatedIngredients = prevState.ingredients.filter(
-          (ingredient) => ingredient !== value
-        );
-      }
+    let updatedIngredients;
+    if (checked) {
+      updatedIngredients = [...formState.ingredients, value];
+    } else {
+      updatedIngredients = formState.ingredients.filter(
+        (ingredient) => ingredient !== value
+      );
+    }
 
-      return {
-        ...formState,
-        ingredients: updatedIngredients,
-      };
-    });
+    const newState = {
+      ...formState,
+      ingredients: updatedIngredients,
+    }
 
- 
-  
-  };
+    setFormState(newState);
 
-  useEffect(()=>{
     Yup.reach(formSchema,'ingredients')
-    .validate(formState.ingredients)
+    .validate(updatedIngredients)
     .then((valid) => {
       setErrorState({ ...errorState, ingredients: "" });
     })
     .catch((err) => {
       setErrorState({ ...errorState, ingredients: err.errors[0] });
     });
-  },[formState])
+
+ 
+  
+  };
+
 
   return (
     <>

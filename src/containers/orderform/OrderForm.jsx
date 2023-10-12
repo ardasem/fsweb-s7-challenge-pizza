@@ -6,9 +6,13 @@ import PropertiesContainer from "../properties-container/PropertiesContainer";
 import NoteComponent from "../../components/note-component/NoteComponent";
 import OrderCheckContainer from "../order-check-container/OrderCheckContainer";
 import { formSchema } from "../../formSchema";
+import { useHistory } from "react-router-dom";
 
-function OrderForm() {
+function OrderForm(props) {
+  const history = useHistory();
+  const { setFinalOrderState } = props;
   const [formState, setFormState] = useState({
+    foodName: "Position Absolute Acı Pizza",
     name: "",
     size: "",
     dough: "",
@@ -28,17 +32,30 @@ function OrderForm() {
   const [isValid, setIsValid] = useState(false);
 
   useEffect(() => {
+    console.log(formState)
     formSchema.isValid(formState).then((valid) => setIsValid(valid));
+
   }, [formState]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formState);
+    const totalPrice =
+      (formState["ingredients"].length * formState.ingredientPrice +
+        formState.price) *
+      formState.quantity;
+
+    setFinalOrderState({
+      ...formState,
+      totalPrice: totalPrice,
+    });
+
+    history.push("/success");
   };
 
   return (
     <form id="pizza-form" onSubmit={handleSubmit}>
       <NoteComponent
+        id={"name-input"}
         formState={formState}
         setFormState={setFormState}
         errorState={errorState}
@@ -60,6 +77,7 @@ function OrderForm() {
         setErrorState={setErrorState}
       />
       <NoteComponent
+        id={"special-text"}
         formState={formState}
         setFormState={setFormState}
         heading={"Sipariş Notu"}

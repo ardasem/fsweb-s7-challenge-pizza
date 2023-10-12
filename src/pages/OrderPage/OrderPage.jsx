@@ -5,12 +5,14 @@ import OrderForm from '../../containers/orderform/OrderForm'
 import Hero from '../../containers/orderform-hero/Hero'
 import Footer from '../../layout/footer/Footer'
 
-function OrderPage() {
+function OrderPage(props) {
+const {setFinalOrderState} =props;
+
   return (
     <div>
         <Header />
         <Hero />
-        <OrderForm />
+        <OrderForm setFinalOrderState={setFinalOrderState} />
         <Footer />
     </div>
   )

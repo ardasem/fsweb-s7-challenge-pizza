@@ -1,0 +1,60 @@
+.success--container {
+  background: #ce2829;
+}
+
+.success--heading {
+    display: flex;
+    flex-direction: column;
+    border-bottom:1px solid #fff;
+    margin: 0 300px;
+    padding: 30px;
+}
+
+
+.success--heading .satisfy{
+    margin: 0;
+    margin-top:48px;
+}
+
+.success--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.success--container .barlow {
+    color: #FFF;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.762px; /* 154.762% */
+    text-align: left;
+}
+
+.success--heading--two {
+    color: #FFF;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29.438px; /* 133.81% */
+  }
+  
+
+  .success--price--container{
+    display: flex;
+    flex-direction: column;
+    padding: 42px 49px;
+    margin: 60px;
+    border: 1px solid #FFF;
+    border-radius: 6px;
+  }
+
+  .price--listing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+    padding: 0 50px;
+  }

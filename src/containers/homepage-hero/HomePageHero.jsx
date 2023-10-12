@@ -5,11 +5,13 @@ import "./homepagehero.css";
 function HomePageHero() {
   return (
     <div className="homepage--hero">
-      <p className="satisfy">fırsatı kaçırma</p>
-      <p className="bebas"> KOD ACIKTIRIR</p>
-      <p className="bebas"> pizza, doyurur</p>
+      <div className="hero--heading">
+        <p className="satisfy">fırsatı kaçırma</p>
+        <p className="bebas"> KOD ACIKTIRIR <br /> pizza, doyurur</p>
 
-      <NavLink className="navlink" to="/pizza">
+      </div>
+
+      <NavLink id="order-pizza" className="navlink" to="/pizza">
         <button className="custom--button">ACIKTIM</button>
       </NavLink>
     </div>
