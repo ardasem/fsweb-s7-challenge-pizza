@@ -28,7 +28,7 @@ describe("Member Form Test", () => {
   });
 
 
-  it('Hatalar calışıyor.',()=>{
+  it('Hatalar calışıyor ve button doğru davranış sergiliyor.',()=>{
     cy.visit("http://localhost:3000");
     cy.get('button[class=custom--button]').click();
     cy.get('textarea[name=name]').type('A');
