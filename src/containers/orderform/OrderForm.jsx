@@ -28,13 +28,12 @@ function OrderForm(props) {
     size: "",
     dough: "",
     ingredients: "",
+    notes: "",
   });
   const [isValid, setIsValid] = useState(false);
 
   useEffect(() => {
-    console.log(formState)
     formSchema.isValid(formState).then((valid) => setIsValid(valid));
-
   }, [formState]);
 
   const handleSubmit = (e) => {
@@ -83,6 +82,8 @@ function OrderForm(props) {
         heading={"Sipariş Notu"}
         name={"notes"}
         msg={"Sipariş notunuzu buradan iletebilirsiniz..."}
+        errorState={errorState}
+        setErrorState={setErrorState}
       />
       <hr className="break" />
       <OrderCheckContainer

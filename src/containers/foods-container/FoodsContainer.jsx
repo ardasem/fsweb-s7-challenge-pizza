@@ -18,13 +18,13 @@ function FoodsContainer() {
 
       <div className="food--cards--container">
         <FoodCard
-          imgSrc={foodImgSrc1}
+          imgSrc={foodImgSrc2}
           name={"Terminal Pizza"}
           price={60}
           rating={200}
         />
         <FoodCard
-          imgSrc={foodImgSrc2}
+          imgSrc={foodImgSrc1}
           name={"Position Absolute Acı Pizza"}
           price={85}
           rating={928}

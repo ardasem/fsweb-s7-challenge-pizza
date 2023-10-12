@@ -11,6 +11,7 @@ export const formSchema = Yup.object().shape({
     .required()
     .min(4, "Lütfen en az 4 adet malzeme seçiniz.")
     .max(10, "Lütfen en fazla 10 adet malzeme seçiniz."),
+
 });
 
 

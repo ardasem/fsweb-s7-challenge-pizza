@@ -3,6 +3,10 @@
   flex-direction: column;
   padding: 22px 55px 22px 55px;
   background: #fff;
+  cursor: pointer;
+}
+.food--card:hover{
+  opacity: 0.7;
 }
 
 .food--card .card--heading {

@@ -14,7 +14,6 @@ function PropertiesContainer(props) {
       [name]: value,
     });
 
-    console.log(name,value);
 
     Yup.reach(formSchema, name)
       .validate(value)

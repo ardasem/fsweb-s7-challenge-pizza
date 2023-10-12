@@ -7,7 +7,7 @@ function Hero() {
     <div className="hero--container">
         <img className="hero--img" src={heroPizza} alt="" />
 
-        <p className="breadcrumb--container">Anasayfa-Seçenekler-Sipariş Oluştur</p>
+        <p className="breadcrumb--container">Anasayfa-Seçenekler- <em>Sipariş Oluştur</em></p>
 
       <ProductContainer />
     </div>

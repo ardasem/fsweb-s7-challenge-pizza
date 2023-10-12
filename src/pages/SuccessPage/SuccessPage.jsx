@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../../layout/header/Header";
 import "./successpage.css";
-import ingredients from "../../components/checkbox/data";
 
 function SuccessPage(props) {
   const { finalOrderState } = props;
@@ -16,12 +15,12 @@ function SuccessPage(props) {
 
       <div className="success--order--info">
         <p className="success--heading--two">{finalOrderState.foodName}</p>
-        <p className="barlow">Boyut: {finalOrderState.size}</p>
+        <p className="barlow">Boyut: <strong>{finalOrderState.size}</strong></p>
         <p className="barlow">
-          Hamur: {finalOrderState.dough === "thin" ? "İnce" : "Kalın"}
+          Hamur: <strong>{finalOrderState.dough === "thin" ? "İnce" : "Kalın"}</strong>
         </p>
         <p className="barlow">
-          Ek Malzemeler: {finalOrderState.ingredients + " "}
+          Ek Malzemeler: <strong>{finalOrderState.ingredients + " " }</strong>
         </p>
       </div>
 

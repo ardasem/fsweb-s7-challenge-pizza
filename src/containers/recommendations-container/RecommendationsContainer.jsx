@@ -8,7 +8,7 @@ function RecommendationsContainer() {
         <p className="big--paragraph">
           Özel <br /> Lezzetus
         </p>
-        <p className="small--paragraph"> Position:Absolute Acı Burger</p>
+        <p className="small--paragraph"> Position:Absolute Acı Pizza</p>
         <button className="home--orderbtn">SİPARİŞ VER</button>
       </div>
 

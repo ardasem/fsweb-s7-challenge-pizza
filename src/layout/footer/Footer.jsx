@@ -47,7 +47,7 @@ function Footer() {
         <p className="footer--paragraph">useEffect Tavuklu Pizza</p>
         <p className="footer--paragraph">Beyaz Console Frosty</p>
         <p className="footer--paragraph">Testler Geçti Mutlu Burger</p>
-        <p className="footer--paragraph">Position Absolute Acı Burger</p>
+        <p className="footer--paragraph">Position Absolute Acı Pizza</p>
       </div>
 
       <div className="right">
