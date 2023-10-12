@@ -41,7 +41,7 @@ function NoteContainer(props) {
   return (
     <div className="note--component">
       <p className="form--heading">{heading}</p>
-      {errorState[componentName] && <p className="red">{errorState[componentName]}</p> }
+      {errorState[componentName] && <p data-cy='error' className="red">{errorState[componentName]}</p> }
       <textarea
         id={id}
         name={name}

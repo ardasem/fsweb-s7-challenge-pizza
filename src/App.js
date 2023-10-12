@@ -15,7 +15,7 @@ const App = () => {
           <HomePage />
         </Route>
         <Route path="/pizza">
-          <OrderPage setFinalOrderState={setFinalOrderState} />
+          <OrderPage finalOrderState={finalOrderState} setFinalOrderState={setFinalOrderState} />
         </Route>
         <Route path="/success" >
           <SuccessPage finalOrderState={finalOrderState}/>

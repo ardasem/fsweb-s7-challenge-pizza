@@ -25,15 +25,14 @@
 
 .foodcard--small {
   width: 636px;
-  height: 263px;
+  height: 255px;
   background-image: url("../../Assets/adv-aseets/kart-2.png");
   background-size: 636px;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   border: none;
   border-radius: 16px;
-  margin: 10px;
+  margin: 26px 10px;
 }
 
 .card-two {

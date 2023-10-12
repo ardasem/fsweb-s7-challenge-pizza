@@ -89,7 +89,7 @@ function OrderCheckContainer(props) {
         </div>
         <button
         id="order-button"
-          className="order--button"
+          className="order--button border--bottom"
           type="submit"
           disabled={!isValid}
         >

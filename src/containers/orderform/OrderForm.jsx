@@ -7,10 +7,11 @@ import NoteComponent from "../../components/note-component/NoteComponent";
 import OrderCheckContainer from "../order-check-container/OrderCheckContainer";
 import { formSchema } from "../../formSchema";
 import { useHistory } from "react-router-dom";
+import axios from 'axios'
 
 function OrderForm(props) {
   const history = useHistory();
-  const { setFinalOrderState } = props;
+  const {finalOrderState, setFinalOrderState } = props;
   const [formState, setFormState] = useState({
     foodName: "Position Absolute Acı Pizza",
     name: "",
@@ -19,9 +20,9 @@ function OrderForm(props) {
     ingredients: [],
     notes: "",
     quantity: 1,
-    price: 85.5,
-    ingredientPrice: 5.0,
-    totalPrice: 0.0,
+    price: 85.50,
+    ingredientPrice: 5.00,
+    totalPrice: 0.00,
   });
   const [errorState, setErrorState] = useState({
     name: "",
@@ -43,10 +44,25 @@ function OrderForm(props) {
         formState.price) *
       formState.quantity;
 
-    setFinalOrderState({
-      ...formState,
-      totalPrice: totalPrice,
+      const finalState = {
+        ...formState,
+        totalPrice: totalPrice,
+      };
+
+    setFinalOrderState(finalState);
+
+    axios.post('https://reqres.in/api/users', finalOrderState)
+    .then(function (response) {
+      setFinalOrderState({
+        ...finalState,
+        id: response.data.id,
+        createdAt : response.data.createdAt
+      });;
+    })
+    .catch(function (error) {
+      console.log(error);
     });
+
 
     history.push("/success");
   };

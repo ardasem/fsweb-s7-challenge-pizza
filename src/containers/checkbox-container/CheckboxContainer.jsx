@@ -10,7 +10,7 @@ function CheckboxContainer(props) {
     <div className="ingredients--container">
           <p className="form--heading">Ek Malzemeler</p>
           <p className='form--text'>En fazla 10 malzeme seçebilirsiniz. 5₺</p>
-          {errorState.ingredients && <p className='red'>{errorState.ingredients}</p>}
+          {errorState.ingredients && <p data-cy='error' className='red'>{errorState.ingredients}</p>}
           <div className="ingredients">
             <CheckBox formState={formState} setFormState={setFormState} errorState={errorState} setErrorState={setErrorState}/>
           </div>

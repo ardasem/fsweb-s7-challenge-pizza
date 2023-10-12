@@ -3,10 +3,10 @@
 .order--check--container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  width: 150%;
+  justify-content: space-around;
+  width: 100%;
   padding: 0;
-  gap: 22%;
+  gap: 32%;
   font-family: Barlow;
 }
 
@@ -68,6 +68,11 @@
 .border--top {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+}
+
+.border--bottom {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .order--info--container {

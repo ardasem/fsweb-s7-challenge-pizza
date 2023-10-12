@@ -15,7 +15,7 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <div className="footer--container">
+    <footer className="footer--container">
         
         <div className="footer--upper">  
       <div className="left">
@@ -66,7 +66,7 @@ function Footer() {
             <img className="footer--icon" src={twIcon} alt="" />
         </div>
       
-    </div>
+    </footer>
   );
 }
 

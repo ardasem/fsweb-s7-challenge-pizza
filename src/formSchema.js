@@ -1,7 +1,7 @@
 import * as Yup from "yup";
 
 export const formSchema = Yup.object().shape({
-  name: Yup.string().required("Lütfen isminizi giriniz."),
+  name: Yup.string().required("Lütfen isminizi giriniz.").min(2,'Lütfen en az 2 karakter giriniz.'),
   size: Yup.string()
     .oneOf(["S", "M", "L"], "Lütfen boyut seçiniz.")
     .required("Lütfen boyut seçiniz."),

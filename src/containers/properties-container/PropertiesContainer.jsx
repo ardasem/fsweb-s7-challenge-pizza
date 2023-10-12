@@ -30,7 +30,7 @@ function PropertiesContainer(props) {
       <div>
         <p className="form--heading">Boyut Seç <em>*</em></p>
         <div className="radio--buttons">
-          <label
+          <label data-cy='testradio'
             className={`radio--button--container ${
               formState.size === "S" ? "active" : ""
             }`}
@@ -79,12 +79,13 @@ function PropertiesContainer(props) {
 
       <div className="dough--dropdown">
         <p className="form--heading">Hamur Seç <em>*</em></p>
+        {errorState.dough && <p data-cy='error' className="red">{errorState.dough}</p>}
         <select name="dough" onChange={handleChange}>
           <option value="">Hamur Seç</option>
           <option value="thick">Kalın</option>
           <option value="thin">İnce</option>
         </select>
-        {errorState.dough && <p className="red">{errorState.dough}</p>}
+      
       </div>
     </div>
   );

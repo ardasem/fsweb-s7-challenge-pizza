@@ -46,7 +46,7 @@ function CheckBox(props) {
     <>
       {data.map((ingredient) => {
         return (
-          <label className="checkbox--container" key={ingredient + "div"}>
+          <label data-cy='testcheckbox' className="checkbox--container" key={ingredient + "div"}>
             {ingredient}
             <input
               type="checkbox"
@@ -55,8 +55,8 @@ function CheckBox(props) {
               value={ingredient}
               onChange={handleChange}
               checked={formState.ingredients.includes(ingredient)}
-            />
-             <span className="checkmark"></span>
+             />
+             <span  className="checkmark"></span>
           </label>
         );
       })}
